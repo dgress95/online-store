@@ -1,0 +1,85 @@
+/*
+ * This css file holds global styles used across the application, in both static and Vue pages.
+ */
+
+ body {
+    margin: 200px 0px 0px 0px;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+
+#app {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main"
+    "footer";
+}
+
+h1 {
+    font-size: 28px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+main {
+    overflow: auto;
+    margin: 20px;
+}
+
+.cart:hover {
+    cursor: pointer;
+  }
+
+
+/*********************************************************************** 
+ * Base styles for the application header, nav, and footer. These core 
+ * parts of the site layout are shown on both static and Vue app pages 
+ ***********************************************************************/
+
+#main-content{
+    grid-area: main;
+}
+
+#app-header {
+    grid-area: header;
+}
+
+#app-footer {
+    grid-area: footer;
+}
+
+#main-nav {
+    grid-area: nav;
+}
+
+
+/* Button styles */
+.icon-button {
+    background-color: transparent;
+    border: none;
+    font-size: inherit;
+    padding: 0;
+    margin-right: 0.5rem;
+}
+
+.icon-button-inactive {
+    color: grey;
+}
+
+button:hover {
+    cursor: pointer;
+}
